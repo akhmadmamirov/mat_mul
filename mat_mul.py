@@ -1,5 +1,6 @@
+from built_mat import build_matrix
+from matrix_500x500 import matrix
 
-import random
 def mat_mul(matix_a, matrix_b):
   rows_a, cols_a = len(matix_a), len(matix_a[0])
   rows_b, cols_b = len(matrix_b), len(matrix_b[0])
@@ -13,14 +14,8 @@ def mat_mul(matix_a, matrix_b):
         res[i][j] += matix_a[i][k] * matrix_b[k][j]
   return res
 
-def build_matrix(rows, cols):
-  low = 0
-  high = 10
-  return [[random.randint(low, high) for _ in range(cols)] for _ in range(rows)]
-
-
-matrix_a = build_matrix(500, 500)
-matrix_b = build_matrix(500, 500)
-mat_mul(matrix_a, matrix_b)
+# matrix_a = build_matrix(500, 500)
+# matrix_b = build_matrix(500, 500)
+mat_mul(matrix, matrix)
 
 
