@@ -1,1 +1,3 @@
-# mat_mul
+### Run benchmarks
+
+`  python benchmark.py`
